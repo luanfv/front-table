@@ -4,6 +4,11 @@ Esta tabela deve conter as seguintes colunas: imagem, nome, cargo, data de admis
 com todos os dados devidamente formatados e apresentados como está no figma. Além disso, 
 deve ter a possibilidade de realizar uma pesquisa na tabela por um input.
 
+![image](https://user-images.githubusercontent.com/42809136/127918010-79b5d883-df57-4c6d-8a2a-43e220d3c703.png)
+
+# Pré-requisitos
+Para realizar o teste, você precisa ter o npm e o Node JS já instalados em sua máquina.
+
 # Regras
 Para realizar o teste, deve-se utilizar React ou Vanilla JS (JavaScript puro). É permitido utilizar libs externas,
 mas pedimos que utilizem o mínimo possível, para que consigamos avaliar melhor o seu teste.
@@ -24,3 +29,9 @@ para obter mais informações: https://github.com/typicode/json-server.
 # Envio
 Após a finalização do teste, suba o projeto para um repositório do github e nos envie o link por email.
 Qualquer dúvida a respeito, nos chame pelo email.
+
+# Links
+figma: https://www.figma.com/file/y9qJNNAckFRL7LNoyNjpv8/Teste---Be-mobile <br />
+npm & nodejs: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm <br />
+yarn: https://classic.yarnpkg.com/en/docs/install/#debian-stable <br />
+json-server: https://github.com/typicode/json-server <br />

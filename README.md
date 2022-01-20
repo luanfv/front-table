@@ -17,7 +17,7 @@ Iremos avaliar os itens listados abaixo, em ordem de relevância.
 1. Lógica de programação
 2. Organização (código e arquivos)
 3. CSS
-4. README, deve conter pelo menos as seguitnes informações: Sobre, Pré-requisitos, Rodando a aplicação.
+4. README, deve conter pelo menos as seguintes informações: Sobre, Pré-requisitos, Rodando a aplicação.
 
 ## Pré-requisitos
 Tenha instalado em sua máquina as seguintes ferramentas:

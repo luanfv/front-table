@@ -6,7 +6,8 @@ import {Container} from './style'
 export const Header = () =>{
   return(
     <Container>
-      <img src={Logo}/> 
+      <img src={Logo} alt="be mobile logo"/> 
     </Container>
   )
 }
+

@@ -13,8 +13,12 @@ export const Global = createGlobalStyle`
       --header-background:#1C1C1C;
       --header-table:#5984C0;
       --card-color:#FFFFFF;
-      -title-color:#1C1C1C;
+      --title-color:#1C1C1C;
+      --border-color:#CDCDCD;
+
+
       font-size: 1.6vw;
+      font-family: 'Roboto', sans-serif;
 
       @media (min-width: 768px) {
         font-size: 1.25vw;

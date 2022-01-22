@@ -1,0 +1,11 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  height: 80px;
+}
+
+.navbar-container img {
+  height: 50px;
+  margin-left: 32px;
+}

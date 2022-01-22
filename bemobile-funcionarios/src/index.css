@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+}
+
+body{
+  background: #f0f0f0;
+}

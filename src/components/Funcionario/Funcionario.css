@@ -1,0 +1,20 @@
+.funcionario-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+  align-items: center;
+  text-align: center;
+  background-color: var(--white);
+  margin-bottom: 5px;
+  height: 49px;
+  transition: all 0.9s;
+}
+
+.funcionario-container:hover {
+  transform: scale(1.05);
+}
+
+.funcionario-container img {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}

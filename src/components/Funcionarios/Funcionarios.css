@@ -1,0 +1,19 @@
+.funcionarios-container {
+  width: 80%;
+  margin: 100px auto;
+}
+.funcionarios-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+  height: 50px;
+  background-color: var(--funcionarios-header-color);
+  border-radius: 10px 10px 0 0;
+  align-items: center;
+  text-align: center;
+}
+
+.funcionarios-header p {
+  color: var(--white);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}

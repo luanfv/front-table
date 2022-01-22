@@ -1,40 +1,70 @@
-# Be mobile - Teste de Front-end
-O teste de Front-end da Be mobile consiste em montar uma tabela com as informações que virão por uma API simulada escrita em json-server. 
-A tabela deve conter as seguintes colunas: imagem, nome, cargo, data de admissão e telefone,
-com todos os dados devidamente formatados e apresentados como está no figma. Além disso, 
-deve ter a possibilidade de realizar uma pesquisa na tabela por um input. Obs: 
-[acesse aqui o figma do projeto](https://www.figma.com/file/y9qJNNAckFRL7LNoyNjpv8/Teste---Be-mobile).
+# Getting Started with Create React App
 
-![image](https://user-images.githubusercontent.com/42809136/127918010-79b5d883-df57-4c6d-8a2a-43e220d3c703.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Condições
-Deve-se utilizar React ou Vanilla JS (JavaScript puro). É permitido utilizar libs externas,
-mas recomenda-se que seja o mínimo possível para que consigamos avaliar melhor o seu teste.
+## Available Scripts
 
-## Critérios de Avaliação
-Em ordem de relevância:
-1. Lógica de programação
-2. Organização (do código e dos arquivos)
-3. CSS
-4. README, que deve conter pelo menos as seguintes informações: Sobre, Pré-requisitos, Rodando a Aplicação.
+In the project directory, you can run:
 
-## Pré-requisitos
-Tenha instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/).
+### `npm start`
 
-## Rodando a aplicação
-Para iniciar o projeto, siga o passo a passo abaixo. Caso não tenha familiaridade com o [json-server](https://github.com/typicode/json-server):
-1. Baixe este projeto em sua máquina e crie um repositório no Github baseado nele
-2. Entre no projeto e execute os comandos abaixo
-```bash
-# Instalar as dependências
-$ yarn
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Executar o json-server
-$ yarn json-server --watch server.json
-```
-3. Inicie a estrutura do seu projeto (seja em React ou Vanilla JS)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Entrega
-Entregue este projeto realizando um Pull Request para este repositório dentro do prazo combinado com o avaliador.
-Em caso de dúvidas, contate-nos via e-mail.
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

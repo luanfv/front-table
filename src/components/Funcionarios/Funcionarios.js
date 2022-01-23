@@ -3,16 +3,16 @@ import "./Funcionarios.css";
 import { api } from "../../services/Api";
 import Funcionario from "../Funcionario/Funcionario";
 import { Context } from "../../context/CtxApp";
+import Vazio from "../Vazio/Vazio";
 export default function Funcionarios() {
   const { funcionarios, setFuncionarios } = useContext(Context);
 
   useEffect(() => {
     api.get("/employess").then((response) => {
-      console.log(response);
       setFuncionarios(response.data);
     });
   }, []);
-
+  console.log(funcionarios);
   return (
     <section className="funcionarios-container">
       <header className="funcionarios-header">
@@ -23,6 +23,7 @@ export default function Funcionarios() {
         <p>Telefone</p>
       </header>
       <div>
+        {funcionarios.length <= 0 && <Vazio />}
         {funcionarios.map((funcionario, index) => (
           <Funcionario
             key={index}

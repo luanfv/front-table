@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Funcionarios.css";
 import { api } from "../../services/Api";
 import Funcionario from "../Funcionario/Funcionario";
+import { Context } from "../../context/CtxApp";
 export default function Funcionarios() {
-  const [funcionarios, setFuncionarios] = useState([]);
+  const { funcionarios, setFuncionarios } = useContext(Context);
 
   useEffect(() => {
     api.get("/employess").then((response) => {

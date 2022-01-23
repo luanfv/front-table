@@ -11,7 +11,7 @@ Para que o projeto funcione corretamente, e importante ter as seguintes ferramen
 ## Rodando a aplicação
 Para iniciar o projeto, siga as instruçoes abaixo:
 1. Realize um git clone deste projeto na sua maquina
-2. 
+
 git clone https://github.com/BrunoMou1/front-table.git
 
 2. Entre na pasta criada no passo anterior e execute os comandos abaixo:

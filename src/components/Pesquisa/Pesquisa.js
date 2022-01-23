@@ -6,7 +6,8 @@ import { api } from "../../services/Api";
 import { Context } from "../../context/CtxApp";
 
 export default function Pesquisa() {
-  const { setFuncionarios } = useContext(Context);
+  const { setFuncionarios, pagina, limite, setShowButton } =
+    useContext(Context);
 
   const procurar = async (e) => {
     e.preventDefault();
@@ -19,13 +20,17 @@ export default function Pesquisa() {
     const nomeFormatado = formatarNome(procurarFuncionario);
 
     if (nomeFormatado === "") {
-      api.get("/employess").then((response) => {
-        setFuncionarios(response.data);
-      });
+      api
+        .get(`/employess?_page=${pagina}&_limit=${limite}`)
+        .then((response) => {
+          setFuncionarios(response.data);
+        });
+      setShowButton(true);
     } else {
       api.get(`employess?name=${nomeFormatado}`).then((response) => {
         setFuncionarios(response.data);
       });
+      setShowButton(false);
     }
   };
 

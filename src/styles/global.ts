@@ -7,6 +7,7 @@ export const Global = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   :root {
       --background:#F0F0F0;
@@ -15,7 +16,7 @@ export const Global = createGlobalStyle`
       --card-color:#FFFFFF;
       --title-color:#1C1C1C;
       --border-color:#CDCDCD;
-
+      background:var(--background);
 
       font-size: 1.6vw;
       font-family: 'Roboto', sans-serif;

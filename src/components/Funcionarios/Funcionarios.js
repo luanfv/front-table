@@ -5,8 +5,10 @@ import Funcionario from "../Funcionario/Funcionario";
 import { Context } from "../../context/CtxApp";
 import Vazio from "../Vazio/Vazio";
 import BotoesNavegacao from "../BotoesNavegacao/BotoesNavegacao";
+
 export default function Funcionarios() {
-  const { funcionarios, setFuncionarios, pagina, limite } = useContext(Context);
+  const { funcionarios, setFuncionarios, pagina, limite, showButton } =
+    useContext(Context);
 
   useEffect(() => {
     api.get(`/employess?_page=${pagina}&_limit=${limite}`).then((response) => {
@@ -36,7 +38,7 @@ export default function Funcionarios() {
           />
         ))}
       </div>
-      <BotoesNavegacao />
+      {showButton === true && <BotoesNavegacao />}
     </section>
   );
 }

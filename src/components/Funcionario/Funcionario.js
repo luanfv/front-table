@@ -10,17 +10,10 @@ export default function Funcionario({
   index,
 }) {
   const novaData = data.split("T00:00:00.000Z").join("");
-
-  const formatarData = (input) => {
-    var dataParte = input.match(/\d+/g),
-      ano = dataParte[0].substring(0, 4), // get only two digits
-      mes = dataParte[1],
-      dia = dataParte[2];
-
-    return dia + "/" + mes + "/" + ano;
-  };
-
-  const dataFormatada = formatarData(novaData);
+  const locale = "pt-br";
+  const DataBr = new Date(novaData).toLocaleDateString(locale, {
+    timeZone: "UTC",
+  });
 
   const formatarTelefone = (numero) => {
     numero = numero.replace(/\D/g, ""); //Remove tudo o que não é dígito
@@ -38,7 +31,7 @@ export default function Funcionario({
       </div>
       <p>{nome}</p>
       <p>{cargo}</p>
-      <p>{dataFormatada}</p>
+      <p>{DataBr}</p>
       <p>{telefoneFormatado}</p>
     </div>
   );

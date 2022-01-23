@@ -1,18 +1,19 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Funcionarios.css";
 import { api } from "../../services/Api";
 import Funcionario from "../Funcionario/Funcionario";
 import { Context } from "../../context/CtxApp";
 import Vazio from "../Vazio/Vazio";
+import BotoesNavegacao from "../BotoesNavegacao/BotoesNavegacao";
 export default function Funcionarios() {
-  const { funcionarios, setFuncionarios } = useContext(Context);
+  const { funcionarios, setFuncionarios, pagina, limite } = useContext(Context);
 
   useEffect(() => {
-    api.get("/employess").then((response) => {
+    api.get(`/employess?_page=${pagina}&_limit=${limite}`).then((response) => {
       setFuncionarios(response.data);
     });
-  }, []);
-  console.log(funcionarios);
+  }, [pagina]);
+
   return (
     <section className="funcionarios-container">
       <header className="funcionarios-header">
@@ -35,6 +36,7 @@ export default function Funcionarios() {
           />
         ))}
       </div>
+      <BotoesNavegacao />
     </section>
   );
 }

@@ -11,14 +11,19 @@ export default function Pesquisa() {
   const procurar = async (e) => {
     e.preventDefault();
     const procurarFuncionario = e.target.procurarFuncionario.value;
-    if (procurarFuncionario === "") {
+
+    const formatarNome = (string) => {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    };
+
+    const nomeFormatado = formatarNome(procurarFuncionario);
+
+    if (nomeFormatado === "") {
       api.get("/employess").then((response) => {
-        console.log(response);
         setFuncionarios(response.data);
       });
     } else {
-      api.get(`employess?name=${procurarFuncionario}`).then((response) => {
-        console.log(response);
+      api.get(`employess?name=${nomeFormatado}`).then((response) => {
         setFuncionarios(response.data);
       });
     }

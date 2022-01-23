@@ -1,0 +1,18 @@
+.vazio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  height: 60vh;
+  border-radius: 0 0 10px 10px;
+}
+
+.vazio-container h2 {
+  margin: 25px 0;
+}
+
+.vazio-container .vazio-container__icon {
+  color: var(--funcionarios-header-color);
+  font-size: 100px;
+}

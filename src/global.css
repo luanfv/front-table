@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0F0F0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1080px){
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px){
+  html {
+      font-size: 87.5%;
+  }
+}

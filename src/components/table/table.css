@@ -1,0 +1,45 @@
+.table {
+  width: 100%;
+  padding: 0 32px;
+  margin-bottom: 88px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+table thead tr {
+  background-color: #5984C0;
+  color: #fff;
+}
+
+table thead tr th {
+  padding: 17px 0;
+}
+
+table thead tr th:nth-child(1){
+  border-radius: 5px 0 0 0;
+}
+
+table thead tr th:last-child{
+  border-radius: 0 5px 0 0;
+}
+
+table tbody tr {
+  background-color: #ffffff;
+  border: 1px solid #CDCDCD;
+  text-align: center;
+}
+
+table tbody tr td {
+  color: #1C1C1C;
+  padding: 12px 0;
+}
+
+table tbody tr td img {
+  width: 2.7rem;
+  height: 2.6rem;
+  border-radius: 50%;
+}

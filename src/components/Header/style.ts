@@ -5,7 +5,7 @@ export const Container = styled.div`
   width:100vw;
 
   background: var(--header-background);
-  padding: 0.83vw 2.2vw;
+  padding: 0.83vw 3vw;
 
   display: flex;
   flex-direction: column;

@@ -12,13 +12,13 @@ export const Container = styled.div`
 
   p{
     font-size:1.6vw;
-    margin: 6.9vw 0 2.4vw 2.4vw;
+    margin: 6.9vw 0 0 5vw;
     font-weight:500;
   }
 
 
   input[type="text"]{
-    margin: 6.9vw 2.4vw 2.4vw 0;
+    margin: 6.9vw 5vw 0 0;
     height:2.7vw;
     width:19.5vw;
     border-radius:0.4vw;

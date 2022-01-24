@@ -20,7 +20,6 @@
 }
 
 .pesquisa-container .pesquisa-container__form {
-  background-color: azure;
   position: relative;
   display: flex;
   align-items: center;
@@ -34,4 +33,16 @@
   border: none;
   font-size: 15px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  .pesquisa-container {
+    flex-direction: column;
+  }
+  .pesquisa-container h1 {
+    margin-bottom: 10px;
+  }
+  .pesquisa-container .pesquisa-container__form {
+    width: 250px;
+  }
 }

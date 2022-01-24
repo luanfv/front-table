@@ -22,8 +22,8 @@ export default function Funcionarios() {
         <p>Foto</p>
         <p>Nome</p>
         <p>Cargo</p>
-        <p>Data de admissão</p>
-        <p>Telefone</p>
+        <p className="funcionarios-header__data">Data de admissão</p>
+        <p className="funcionarios-header__telefone">Telefone</p>
       </header>
       <div>
         {funcionarios.length <= 0 && <Vazio />}

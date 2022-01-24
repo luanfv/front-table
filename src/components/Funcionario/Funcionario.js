@@ -31,8 +31,8 @@ export default function Funcionario({
       </div>
       <p>{nome}</p>
       <p>{cargo}</p>
-      <p>{DataBr}</p>
-      <p>{telefoneFormatado}</p>
+      <p className="funcionarios-header__data">{DataBr}</p>
+      <p className="funcionarios-header__telefone">{telefoneFormatado}</p>
     </div>
   );
 }

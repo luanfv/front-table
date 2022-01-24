@@ -1,0 +1,36 @@
+.main .main__search {}
+
+.main .main__search input[type="text"] {
+  /* Neutral / White */
+  position: absolute;
+  width: 282px;
+  height: 40px;
+  left: 710px;
+  top: 50px;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 4px;
+  padding: 8px 0 8px 12px;
+}
+
+.main .main__search input[type="text"]::placeholder {
+  /* Paragraph (md) */
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+
+  /* Neutral / Gray 500 */
+  color: #9E9E9E;
+}
+
+.main .main__search svg {
+  position: absolute;
+  right: 4.33%;
+  top: 60px;
+}

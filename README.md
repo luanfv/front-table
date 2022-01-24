@@ -45,6 +45,9 @@ $ git clone https://github.com/RodrigoRedivo/front-table
 # Acesse a pasta do projeto
 $ cd front-table
 
+# Acesse a Branch
+$ git checkout RodrigoRedivo
+
 # Abra no editor
 $ code .
 

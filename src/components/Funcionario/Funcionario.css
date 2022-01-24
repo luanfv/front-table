@@ -1,12 +1,12 @@
 .funcionario-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+  grid-template-columns: 0.7fr 1fr 1fr 1.5fr 1.3fr;
   align-items: center;
   text-align: center;
   background-color: var(--white);
   margin-bottom: 5px;
   height: 49px;
-  transition: all 0.9s;
+  transition: all 0.4s;
 }
 
 .funcionario-container:hover {
@@ -17,4 +17,10 @@
   border-radius: 50%;
   width: 34px;
   height: 34px;
+}
+
+@media only screen and (max-width: 950px) {
+  .funcionario-container {
+    grid-template-columns: 0.7fr 1fr 1fr;
+  }
 }

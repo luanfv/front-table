@@ -1,10 +1,10 @@
 .funcionarios-container {
   width: 80%;
-  margin: 100px auto;
+  margin: 0px auto;
 }
-.funcionarios-header {
+.funcionarios-container .funcionarios-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+  grid-template-columns: 0.7fr 1fr 1fr 1.5fr 1.3fr;
   height: 50px;
   background-color: var(--funcionarios-header-color);
   border-radius: 10px 10px 0 0;
@@ -12,8 +12,19 @@
   text-align: center;
 }
 
-.funcionarios-header p {
+.funcionarios-container .funcionarios-header p {
   color: var(--white);
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 950px) {
+  .funcionarios-container .funcionarios-header {
+    grid-template-columns: 0.7fr 1fr 1fr;
+  }
+  .funcionarios-header__data,
+  .funcionarios-header__telefone {
+    display: none;
+  }
 }

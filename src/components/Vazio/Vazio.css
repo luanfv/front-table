@@ -9,7 +9,8 @@
 }
 
 .vazio-container h2 {
-  margin: 25px 0;
+  margin: 25px 50px;
+  text-align: center;
 }
 
 .vazio-container .vazio-container__icon {

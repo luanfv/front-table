@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <header className="navbar-container">
         <div className="navbar-container__logo">
-          <img src={logo} />
+          <img src={logo} alt="Be Mobile" />
         </div>
       </header>
     </>

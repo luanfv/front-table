@@ -13,14 +13,16 @@
   background-color: var(--white);
   border-radius: 2px;
 }
+
 .botoesNavegacao-container__anterior {
   left: 0;
 }
+
 .botoesNavegacao-container__proximo {
   right: 0;
 }
 
-.botoesNavegacao-container__anterior-none,
-.botoesNavegacao-container__proximo-none {
+.botoesNavegacao-container__anterior--none,
+.botoesNavegacao-container__proximo--none {
   display: none;
 }

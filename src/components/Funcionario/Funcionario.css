@@ -23,4 +23,23 @@
   .funcionario-container {
     grid-template-columns: 0.7fr 1fr 1fr;
   }
+
+  .funcionarios-header__telefone {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .funcionarios-header__data::before,
+  .funcionarios-header__data {
+    content: "Admissão: ";
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .funcionario-container:hover .funcionarios-header__data,
+  .funcionario-container:hover .funcionarios-header__telefone {
+    display: block;
+  }
+
+  .funcionario-container:hover {
+    height: 100px;
+  }
 }

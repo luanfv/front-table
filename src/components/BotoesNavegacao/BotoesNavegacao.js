@@ -29,7 +29,7 @@ export default function BotoesNavegacao() {
         onClick={anterior}
         className={
           pagina <= 1
-            ? "botoesNavegacao-container__anterior-none"
+            ? "botoesNavegacao-container__anterior--none"
             : "botoesNavegacao-container__anterior"
         }
       >
@@ -39,7 +39,7 @@ export default function BotoesNavegacao() {
         onClick={proximo}
         className={
           pagina >= total
-            ? "botoesNavegacao-container__proximo-none"
+            ? "botoesNavegacao-container__proximo--none"
             : "botoesNavegacao-container__proximo"
         }
       >

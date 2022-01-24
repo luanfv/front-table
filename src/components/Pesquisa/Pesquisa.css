@@ -39,9 +39,11 @@
   .pesquisa-container {
     flex-direction: column;
   }
+
   .pesquisa-container h1 {
     margin-bottom: 10px;
   }
+
   .pesquisa-container .pesquisa-container__form {
     width: 250px;
   }

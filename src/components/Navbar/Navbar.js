@@ -6,7 +6,9 @@ export default function Navbar() {
   return (
     <>
       <header className="navbar-container">
-        <img src={logo} />
+        <div className="navbar-container__logo">
+          <img src={logo} />
+        </div>
       </header>
     </>
   );

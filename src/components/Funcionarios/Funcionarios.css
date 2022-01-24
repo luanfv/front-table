@@ -2,6 +2,7 @@
   width: 80%;
   margin: 0px auto;
 }
+
 .funcionarios-container .funcionarios-header {
   display: grid;
   grid-template-columns: 0.7fr 1fr 1fr 1.5fr 1.3fr;
@@ -23,6 +24,7 @@
   .funcionarios-container .funcionarios-header {
     grid-template-columns: 0.7fr 1fr 1fr;
   }
+
   .funcionarios-header__data,
   .funcionarios-header__telefone {
     display: none;

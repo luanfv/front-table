@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Be Mobile" src="./src/assets/github/logo.png" width="200px" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Be Mobile Employees
 
-## Available Scripts
+Aplicação com intuito de gerenciar os funcionários da empresa com informações como foto, nome, cargo, data de admissão e telefone. Desenvolvida com ReactJS.
 
-In the project directory, you can run:
+<h1 align="center">
+    <img alt="Be Mobile" src="./src/assets/github/readme.png" width="600px" />
+</h1>
 
-### `npm start`
+# Fui além do desafio!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+💻 Adicionei um sistema de paginação que evita muitos funcionários serem renderizados de uma vez, visando o futuro da aplicação.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+💻 Quando a busca não retorna resultado, aparece uma mensagem informando que o funcionário não está cadastrado.
 
-### `npm test`
+💻 Eslint e Prettier para padronizar o código.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+💻 Deixei a aplicação responsiva para dispositivos mobile.
 
-### `npm run build`
+# Demo 📸
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center" >
+  <img src="./src/assets/github/web.gif" alt="demo-web" height="425">
+  <img src="./src/assets/github/mobile.gif" alt="demo-mobile" height="425">
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tenha instalado em sua máquina as seguintes ferramentas: Git, Node.js e Yarn.
 
-### `npm run eject`
+# Rodando a aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.Clone o projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Execute o comando através do git bash na pasta desejada
+$ git clone https://github.com/Thialves02/front-table.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2.Entre dentro da pasta clonada
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Execute o comando através do git bash
+$ cd front-table
+```
 
-## Learn More
+3. Entre na branch Thiago-Branch
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Execute o comando através do console bash
+$ git checkout Thiago-Branch
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4.Execute os comandos abaixo
 
-### Code Splitting
+```bash
+# Instalar as dependências
+$ yarn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Executar o json-server
+$ yarn server
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Executar a aplicação
+$ yarn start
+```

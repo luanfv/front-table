@@ -35,7 +35,7 @@ export default function Pesquisa() {
   };
 
   return (
-    <div className="pesquisa-container">
+    <section className="pesquisa-container">
       <h1>Funcionários</h1>
       <form className="pesquisa-container__form" onSubmit={procurar}>
         <input type="text" placeholder="Pesquisar" name="procurarFuncionario" />
@@ -43,6 +43,6 @@ export default function Pesquisa() {
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
-    </div>
+    </section>
   );
 }

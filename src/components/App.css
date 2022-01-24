@@ -1,0 +1,9 @@
+.wrapper {
+  position: absolute;
+  width: 1024px;
+  height: 800px;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  background: #F0F0F0;
+}

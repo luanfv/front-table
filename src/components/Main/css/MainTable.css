@@ -1,0 +1,84 @@
+.main .main__table {
+  width: 960px;
+  left: 32px;
+  top: 143px;
+  position: relative;
+}
+
+/* ================ table header ================ */
+
+.main .main__table .main__table-title {
+  background: #5984C0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px 4px 0px 0px;
+  height: 49px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main .main__table .main__table-title th {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  top: 15.5px;
+  margin-right: 40px;
+  display: block;
+}
+
+.main .main__table .main__table-title .main__th-nome {
+  margin-right: 80px;
+}
+
+/* ================ table data ================ */
+
+.main .main__table .main__table-data {
+  height: 49px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+}
+
+.main .main__table .main__table-data td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C1C1C;
+  position: absolute;
+  top: 16px;
+}
+
+.main .main__table .main__table-data .main__table-data-img {
+  left: 35px;
+  top: 10px;
+}
+
+.main .main__table .main__table-data .main__table-data-img img {
+  width: 34px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.main .main__table .main__table-data .main__table-data-nome {
+  left: 168px;
+}
+
+.main .main__table .main__table-data .main__table-data-cargo {
+  left: 380px;
+}
+
+.main .main__table .main__table-data .main__table-data-admissao {
+  left: 572px;
+}
+
+.main .main__table .main__table-data .main__table-data-telefone {
+  left: 769px;
+}

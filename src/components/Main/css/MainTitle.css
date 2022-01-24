@@ -1,0 +1,17 @@
+.main .main__title {
+  position: absolute;
+  width: 139px;
+  height: 28px;
+  left: 40px;
+  top: 60px;
+}
+
+.main .main__title h4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #1C1C1C;
+}

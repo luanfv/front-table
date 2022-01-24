@@ -78,7 +78,12 @@ $ npm start
 
 ### Lembrando os dois devem ser iniciado para aplicação funcionar corretamente
 
+# Caso queira entre no site
+
+$ https://61ee0f9427f64a15ada5bc51--mystifying-shockley-372286.netlify.app/
 ```
+
+Caso Queiram acessar o site <a href="https://61ee0f9427f64a15ada5bc51--mystifying-shockley-372286.netlify.app/">AQUI</a>
 
 <h5 align="center"> 
 Feito com 💜 by Rodrigo Redivo 🤝 [Entre em Contato!](https://www.linkedin.com/in/rodrigo-redivo/)

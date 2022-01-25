@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font: 16px 'Roboto', sans-serif;
+    color: #1C1C1C;
+    background-color: #F0F0F0;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1C1C1C;
+    align-self: center;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+    height: 60px;
+    background: #1C1C1C;
+  }
+
+  .logo {
+    margin: 12px 0 0 32px;
+    display:inline-block;
+  }
+
+  .container-search {
+     justify-content:space-between;
+     padding: 32px 0;
+  }
+
+  .container-search,
+  .table {
+    width: 960px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .form-search {
+    width: 280px;
+    height: 38px;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #CDCDCD;
+  } /* container busca*/
+
+  .search {
+    width: 230px;
+    height: 22px;
+    float: left;
+    font: 16px 'Open Sans', sans-serif;
+    color: #9E9E9E;
+    border: none;
+    border-radius: 4px;
+    text-indent: 12px;
+    outline: none;
+    padding: 8px 0;
+  } /* form de busca dentro da caixa*/
+
+  .icon-search {
+    width: 20px;
+    height: 20px;
+    background: url(../imgs/Vector.png) no-repeat #FFF;
+    float: right;
+    margin: 11px;
+    border: 0;
+    cursor: pointer;
+  } /* icone da busca */
+  .search-result{
+    color: tomato;
+    display: none;
+  }
+ .table {
+  flex-direction: column;
+
+ }
+
+.table-line,
+#result-data .table-line {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  box-sizing: border-box;
+  padding: 15px 32px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #CDCDCD;
+  background-color: #FFF;
+}
+
+.table-line:nth-child(1) span {
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.table-line:nth-child(1) {
+  border-radius: 4px 4px 0px 0px;
+  background-color: #5984C0;
+  align-items: center;
+}
+
+#result-data .table-line:nth-child(1) span {
+  text-transform: none;
+  color: #1C1C1C;
+  text-align: left;
+}
+
+.table-line .thumb,
+.table-line .item-thumb {
+  width: 6%;
+}
+
+.table-line .name,
+.table-line .item-name {
+  width: 26%;
+}
+
+.table-line .func,
+.table-line .item-func {
+  width: 18%;
+}
+
+.table-line .data,
+.table-line .item-data {
+  width: 26%;
+}
+
+.table-line .phone,
+.table-line .item-phone {
+  width: 24%;
+}
+
+.item-thumb img{
+  width: 34px;
+  height: 33px;
+
+}
+.item-data,
+.item-phone,
+#result-data .item-data,
+#result-data .item-phone {
+  text-align: center !important;
+}
+
+.table-line .item-name p {
+  margin-left: 40%;
+
+}
+.table-line .item-func p {
+  margin-left: 30%;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 415px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .logo img{
+    margin: 5px 0 0 0;
+  }
+
+  .container-search {
+    display: block;
+  }
+
+  h1{
+    font-size: 18px;
+  }
+  .table-line:nth-child(1) span {
+    font-size: 12px;
+  }
+
+  .table-line .item-name p, .table-line .item-func p {
+    margin-left: 5%;
+  }
+
+  .form-search {
+    width: 260px;
+    margin-left: 30px;
+  }
+
+  .icon-search {
+    position: relative;
+    top: -38px;
+  }
+
+}
+
+@media screen and (max-width: 913px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .table, .container-search {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 85px;
+  }
+
+  .form-search {
+    margin-right: 32px;
+  }
+
+  h1 {
+    margin-left: 32px;
+  }
+  .table-line:nth-child(1) span {
+    font-size: 12px;
+  }
+
+  .table-line .thumb,
+  .table-line .item-thumb,
+  .table-line .data,
+  .table-line .item-data {
+    display: none;
+  }
+
+  .table-line .item-name p, .table-line .item-func p {
+    margin-left: 5%;
+  }
+
+}

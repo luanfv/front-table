@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Funcionários - Be Mobile</title>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="logo" href="https://bemobile.tech/" target="_blank">
+                <img src="assets/imgs/logo-bemobile.png" alt="Logo Be Mobile" />
+            </a>
+        </header>
+
+        <section class="container-search">
+            <h1>Funcionários</h1>
+                <div class="form-search">
+                    <form action="?" id="form-search" name="formSearch">
+                        <input class="search" autocomplete="off" placeholder="Pesquisar" type="text" id="search" maxlength="35">
+                        <button type="button" class="icon-search"></button>
+                    </form>
+
+              <section class="search-result"> Termo não encontrado!</section>
+                </div>
+
+            </section>
+
+            <section class="table">
+                <div class="table-line">
+                    <span class="thumb"> Foto</span>
+                    <span class="name">Nome</span>
+                    <span class="func">Cargo</span>
+                    <span class="data">Data de Admissão</span>
+                    <span class="phone">Telefone</span>
+                </div>
+                <div id="result-data"></div>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="assets/js/api.js"></script>
+</body>
+</html>

@@ -10,3 +10,17 @@
   line-height: 28.13px;
   color: #1c1c1c;
 }
+
+.employess-search {
+  background: white;
+  margin-right: 32px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding: 8px 0 8px 12px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

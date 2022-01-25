@@ -3,11 +3,12 @@ import EmployeesTable from "./components/EmployeesTable/EmployeesTable";
 import BemobileHeader from "./components/BemobileHeader/BemobileHeader";
 import getEmployees from "./services/employees";
 import { useState, useEffect } from "react";
+import { formatCellphone, formatAdmissionDate } from "./helpers/formatHelpers";
 
 function App() {
   const [employees, seteEmployees] = useState([]);
   const [filter, setFilter] = useState("");
-  const [filteredItems, setFilteredItems] = useState([]);
+  const [filteredEmployees, setFilteredEmployees] = useState([]);
   useEffect(() => {
     const request = async () => {
       const data = await getEmployees();
@@ -16,29 +17,34 @@ function App() {
     request();
   }, []);
   useEffect(() => {
-    setFilteredItems(
+    const lowerFilter = filter.toLowerCase();
+    setFilteredEmployees(
       employees.filter(
         (employee) =>
-          (filter && employee.name.includes(filter)) ||
-          employee.job.includes(filter) ||
-          employee.admission_date.includes(filter) ||
-          employee.phone.includes(filter)
+          (lowerFilter && employee.name.toLowerCase().includes(lowerFilter)) ||
+          employee.job.toLowerCase().includes(lowerFilter) ||
+          formatAdmissionDate(employee.admission_date).includes(filter) ||
+          formatCellphone(employee.phone).includes(filter) //Ensure the search in all properties and in lower and Up Case
       )
     );
   }, [filter]);
-  console.log(filteredItems);
+
   return (
     <>
       <div className="employess">
         <BemobileHeader />
-        <p className="employess-title">Funcionários</p>
-        <input
-          onChange={(event) => setFilter(event.target.value)}
-          type="text"
-          placeholder="Pesquisar"
-        />
+        <div className="flex">
+          <h1 className="employess-title">Funcionários </h1>
+          <input
+            className="employess-search"
+            onChange={(event) => setFilter(event.target.value)}
+            type="text"
+            placeholder="Pesquisar"
+          />
+        </div>
+
         <EmployeesTable
-          employees={filteredItems !== "" ? filteredItems : employees}
+          employees={filter !== "" ? filteredEmployees : employees}
         />
       </div>
     </>

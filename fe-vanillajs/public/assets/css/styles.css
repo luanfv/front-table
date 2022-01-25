@@ -1,0 +1,153 @@
+:root {
+  --primary-dark: #1C1C1C;
+  --primary-main: #5984C0;
+  --grey-200: #F0F0F0;
+  --grey-400: #CDCDCD;
+  --grey-500: #9E9E9E;
+  --grey-600: #7D7D7D;
+  --grey-800: #404040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grey-200);
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+header {
+  background: var(--primary-dark);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 88px;
+}
+
+.nav-search {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pesquisar {
+  display: flex;
+  max-width: 282px;
+  height: 40px;
+}
+
+.pesquisar input {
+  background: #FFFFFF;
+  height: 100%;
+  width: 242px;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid var(--grey-400);
+  border-right: none;
+  padding-left: 12px;
+}
+
+.pesquisar button {
+  background: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey-400);
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 49px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+thead tr {
+  background: var(--primary-main);
+  border-radius: 4px 4px 0 0;
+}
+
+th {
+  min-width: 160px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+th:first-child {
+  min-width: 60px;
+  border-radius: 4px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+tbody {
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.foto-funcionario {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+}
+
+@media (max-width: 764px) {
+  main {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 486px) {
+  .nav-search {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .pesquisar {
+    margin-top: 6px;
+  }
+}

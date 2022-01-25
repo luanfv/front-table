@@ -47,7 +47,7 @@ $ git clone https://github.com/Thialves02/front-table.git
 $ cd front-table
 ```
 
-3. Entre na branch Thiago-Branch
+3.Entre na branch Thiago-Branch
 
 ```bash
 # Execute o comando através do console bash

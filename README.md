@@ -1,40 +1,77 @@
-# Be mobile - Teste de Front-end
-O teste de Front-end da Be mobile consiste em montar uma tabela com as informações que virão por uma API simulada escrita em json-server. 
-A tabela deve conter as seguintes colunas: imagem, nome, cargo, data de admissão e telefone,
-com todos os dados devidamente formatados e apresentados como está no figma. Além disso, 
-deve ter a possibilidade de realizar uma pesquisa na tabela por um input. Obs: 
-[acesse aqui o figma do projeto](https://www.figma.com/file/y9qJNNAckFRL7LNoyNjpv8/Teste---Be-mobile).
+<h1 align="center">
+    <img alt="Be Mobile" src="./src/assets/github/logo.png" width="200px" />
+</h1>
 
-![image](https://user-images.githubusercontent.com/42809136/127918010-79b5d883-df57-4c6d-8a2a-43e220d3c703.png)
+# Be Mobile Employees
 
-## Condições
-Deve-se utilizar React ou Vanilla JS (JavaScript puro). É permitido utilizar libs externas,
-mas recomenda-se que seja o mínimo possível para que consigamos avaliar melhor o seu teste.
+Aplicação com intuito de gerenciar os funcionários da empresa com informações como foto, nome, cargo, data de admissão e telefone. Desenvolvida com ReactJS.
 
-## Critérios de Avaliação
-Em ordem de relevância:
-1. Lógica de programação
-2. Organização (do código e dos arquivos)
-3. CSS
-4. README, que deve conter pelo menos as seguintes informações: Sobre, Pré-requisitos, Rodando a Aplicação.
+<h1 align="center">
+    <img alt="Be Mobile" src="./src/assets/github/readme.png" width="600px" />
+</h1>
 
-## Pré-requisitos
-Tenha instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/).
+# O que foi utilizado:
 
-## Rodando a aplicação
-Para iniciar o projeto, siga o passo a passo abaixo. Caso não tenha familiaridade com o [json-server](https://github.com/typicode/json-server):
-1. Baixe este projeto em sua máquina e crie um repositório no Github baseado nele
-2. Entre no projeto e execute os comandos abaixo
+<ul>
+<li>ReactJS</li>
+  <li>React hooks</li>
+  <li>Json Server</li>
+  <li>Axios</li>
+</ul>
+
+# Fui além do desafio!
+
+💻 Adicionei um sistema de paginação que evita muitos funcionários serem renderizados de uma vez, visando o futuro da aplicação.
+
+💻 Quando a busca não retorna resultado, aparece uma mensagem informando que o funcionário não está cadastrado.
+
+💻 Eslint e Prettier para padronizar o código.
+
+💻 Deixei a aplicação responsiva para dispositivos mobile.
+
+# Demo 📸
+
+<div align="center" >
+  <img src="./src/assets/github/web.gif" alt="demo-web" height="425">
+  <img src="./src/assets/github/mobile.gif" alt="demo-mobile" height="425">
+</div>
+
+# Pré-requisitos
+
+Tenha instalado em sua máquina as seguintes ferramentas: Git, Node.js e Yarn.
+
+# Rodando a aplicação
+
+1.Clone o projeto
+
+```bash
+# Execute o comando através do git bash na pasta desejada
+$ git clone https://github.com/Thialves02/front-table.git
+```
+
+2.Entre dentro da pasta clonada
+
+```bash
+# Execute o comando através do git bash
+$ cd front-table
+```
+
+3.Entre na branch Thiago-Branch
+
+```bash
+# Execute o comando através do console bash
+$ git checkout Thiago-Branch
+```
+
+4.Execute os comandos abaixo
+
 ```bash
 # Instalar as dependências
 $ yarn
 
 # Executar o json-server
-$ yarn json-server --watch server.json
-```
-3. Inicie a estrutura do seu projeto (seja em React ou Vanilla JS)
+$ yarn server
 
-## Entrega
-Entregue este projeto realizando um Pull Request para este repositório dentro do prazo combinado com o avaliador.
-Em caso de dúvidas, contate-nos via e-mail.
+# Executar a aplicação
+$ yarn start
+```

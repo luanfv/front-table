@@ -1,0 +1,45 @@
+.funcionario-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 1.5fr 1.3fr;
+  align-items: center;
+  text-align: center;
+  background-color: var(--white);
+  margin-bottom: 5px;
+  height: 49px;
+  transition: all 0.4s;
+}
+
+.funcionario-container:hover {
+  transform: scale(1.05);
+}
+
+.funcionario-container img {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+@media only screen and (max-width: 950px) {
+  .funcionario-container {
+    grid-template-columns: 0.7fr 1fr 1fr;
+  }
+
+  .funcionarios-header__telefone {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .funcionarios-header__data::before,
+  .funcionarios-header__data {
+    content: "Admissão: ";
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .funcionario-container:hover .funcionarios-header__data,
+  .funcionario-container:hover .funcionarios-header__telefone {
+    display: block;
+  }
+
+  .funcionario-container:hover {
+    height: 100px;
+  }
+}

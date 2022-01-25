@@ -1,0 +1,17 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  height: 80px;
+  justify-content: center;
+}
+
+.navbar-container .navbar-container__logo {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.navbar-container .navbar-container__logo img {
+  height: 50px;
+}

@@ -1,14 +1,10 @@
 import "./EmployeesTable.css";
-
+import {
+  formatCellphone,
+  formatAdmissionDate,
+} from "../../helpers/formatHelpers";
 const EmployeesTable = (props) => {
-  const {
-    employees,
-    // name = "nome",
-    // job = "cargo",
-    // admissionDate = "Data de admissão",
-    // phone = "Telefone",
-    // image = "foto",
-  } = props;
+  const { employees } = props;
   return (
     <div>
       <table className="table">
@@ -33,20 +29,10 @@ const EmployeesTable = (props) => {
               </td>
               <td>{employee.name}</td>
               <td>{employee.job}</td>
-              <td>{employee.admission_date}</td>
-              <td>{employee.phone}</td>
+              <td>{formatAdmissionDate(employee.admission_date)}</td>
+              <td>{formatCellphone(employee.phone)}</td>
             </tr>
           ))}
-
-          {/* <tr>
-            <td>
-              <img className="employee-image" src={image} alt="EmployeePhoto" />
-            </td>
-            <td>{name}</td>
-            <td>{job}</td>
-            <td>{admissionDate}</td>
-            <td>{phone}</td>
-          </tr> */}
         </tbody>
       </table>
     </div>

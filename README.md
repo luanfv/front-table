@@ -10,6 +10,15 @@ Aplicação com intuito de gerenciar os funcionários da empresa com informaçõ
     <img alt="Be Mobile" src="./src/assets/github/readme.png" width="600px" />
 </h1>
 
+# O que foi utilizado:
+
+<ul>
+<li>ReactJS</li>
+  <li>React hooks</li>
+  <li>Json Server</li>
+  <li>Axios</li>
+</ul>
+
 # Fui além do desafio!
 
 💻 Adicionei um sistema de paginação que evita muitos funcionários serem renderizados de uma vez, visando o futuro da aplicação.

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="./assets/js/index.js" defer ></script>
+  <title>Teste Be-mobile VanillaJS</title>
+</head>
+<body>
+  <Header>
+    <div class="logo">
+      <img src="./assets/images/Fundo.svg" alt="Logo Be-mobile">
+    </div>
+  </Header>
+
+  <div class="container">
+
+    <section class="nav-search">
+      <div>
+        <h3>Funcionários</h3>
+      </div>
+      <div class="pesquisar">
+        <div>
+          <input
+            type="text"
+            id="pesquisar-funcionarios"
+            placeholder="Pesquisar"
+          >
+        </div>
+        <div>
+          <button><img src="./assets/images/lupa.svg" alt="Lupa"></button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>FOTO</th>
+            <th>NOME</th>
+            <th>CARGO</th>
+            <th>DATA DE ADMISSÃO</th>
+            <th>TELEFONE</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-funcionarios">
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+
+</body>
+</html>

@@ -15,5 +15,5 @@ export const Container = styled.div`
     align-self: start;
   }
 
-  }
+}
 `;

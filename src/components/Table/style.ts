@@ -27,16 +27,12 @@ export const Container = styled.div`
     border: 1px solid var(--border-color);
     background: var(--card-color);
   }
-
-  input[type="search"]:focus{
-    background:rgba(255,255,255,0.05);
-  }
-  }
+}
 
 
   .Table-header{
     background:var(--header-table);
-    padding:12px 15px 12px 2%;
+    padding:12px 15px 12px 28px;
     display: grid;
     grid-template-rows: 25px;
     grid-template-columns: 0.5fr repeat(4, 2fr);
@@ -44,30 +40,29 @@ export const Container = styled.div`
 
     font-size:1.2vw;
 
+    .--icon,.--name,.--job,.--date,.--phone{
+      text-align:center;
+    }
+
     color:var(--card-color);
     .--icon{
       grid-column:1;
-      text-align:center;
       width:34px;
     }
     .--name{
       grid-column:2;
-      text-align:center;
     }
     .--job{
       grid-column:3;
-      text-align:center;
     }
     .--date{
       grid-column:4;
-      text-align:center;
     }
     .--phone{
       grid-column:5;
-      text-align:center;
     }
   }
-  }
+}
 
   .Table-item{
     display: grid;
@@ -80,27 +75,26 @@ export const Container = styled.div`
     margin:0 75px;
 
     font-size:1.2vw;
-
-
     color:#000;
-    .--item-icon{
+
+
+    .--item-icon,.--item-name,.--item-job,.--item-date,.--item-phone
+    {
       text-align:center;
+    }
+    .--item-icon{
       grid-column: 1;
     }
     .--item-name{
-      text-align:center;
       grid-column: 2;
     }
     .--item-job{
-      text-align:center;
       grid-column: 3;
     }
     .--item-date{
-      text-align:center;
       grid-column: 4;
     }
     .--item-phone{
-      text-align:center;
       grid-column: 5;
     }
     img{

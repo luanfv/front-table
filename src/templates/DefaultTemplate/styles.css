@@ -1,0 +1,9 @@
+.center {
+    width: 95%;
+    max-width: 1400px;
+    min-width: 280px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    position: relative;
+}

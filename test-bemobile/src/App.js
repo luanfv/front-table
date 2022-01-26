@@ -6,13 +6,13 @@ import { useState, useEffect } from "react";
 import { formatCellphone, formatAdmissionDate } from "./helpers/formatHelpers";
 
 function App() {
-  const [employees, seteEmployees] = useState([]);
+  const [employees, setEmployees] = useState([]);
   const [filter, setFilter] = useState("");
   const [filteredEmployees, setFilteredEmployees] = useState([]);
   useEffect(() => {
     const request = async () => {
       const data = await getEmployees();
-      seteEmployees(data);
+      setEmployees(data);
     };
     request();
   }, []);
@@ -52,13 +52,3 @@ function App() {
 }
 
 export default App;
-
-// const lowerBusca = busca.toLowerCase()
-
-// const Filtradas = frutas.filter((frutas) => frutas.toLowerCase().includes(lowerBusca))
-
-// <input
-//   type="text"
-//   value={busca}
-//   onChange={(event) => setBusca(evente.target.value)}
-// />;

@@ -1,40 +1,37 @@
-# Be mobile - Teste de Front-end
-O teste de Front-end da Be mobile consiste em montar uma tabela com as informações que virão por uma API simulada escrita em json-server. 
-A tabela deve conter as seguintes colunas: imagem, nome, cargo, data de admissão e telefone,
-com todos os dados devidamente formatados e apresentados como está no figma. Além disso, 
-deve ter a possibilidade de realizar uma pesquisa na tabela por um input. Obs: 
-[acesse aqui o figma do projeto](https://www.figma.com/file/y9qJNNAckFRL7LNoyNjpv8/Teste---Be-mobile).
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6596963-b302-4dc4-8e7c-9d95d6c04c65/Untitled.png)
 
-![image](https://user-images.githubusercontent.com/42809136/127918010-79b5d883-df57-4c6d-8a2a-43e220d3c703.png)
+## 👷‍♂️Aplicação de listagem de funcionários
 
-## Condições
-Deve-se utilizar React ou Vanilla JS (JavaScript puro). É permitido utilizar libs externas,
-mas recomenda-se que seja o mínimo possível para que consigamos avaliar melhor o seu teste.
+### Sobre: Projeto que apresenta uma lista com todos os funcionários, com informações adicionais sobre cargo, nome, e data de admissão permitindo o usuário realizar uma pesquisa com base em qualquer uma das informações citadas.
 
-## Critérios de Avaliação
-Em ordem de relevância:
-1. Lógica de programação
-2. Organização (do código e dos arquivos)
-3. CSS
-4. README, que deve conter pelo menos as seguintes informações: Sobre, Pré-requisitos, Rodando a Aplicação.
+[https://img.shields.io/static/v1?label=](https://img.shields.io/static/v1?label=)<LABEL>&message=<MESSAGE>&color=<COLOR>&style=<STYLE>&logo=<LOGO>
 
-## Pré-requisitos
-Tenha instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/).
+### 🛴Requisitos antes de rodar o projeto:
 
-## Rodando a aplicação
-Para iniciar o projeto, siga o passo a passo abaixo. Caso não tenha familiaridade com o [json-server](https://github.com/typicode/json-server):
-1. Baixe este projeto em sua máquina e crie um repositório no Github baseado nele
-2. Entre no projeto e execute os comandos abaixo
-```bash
-# Instalar as dependências
-$ yarn
+Antes de rodar o projeto na sua maquina são necessárias algumas ferramentas:
 
-# Executar o json-server
-$ yarn json-server --watch server.json
-```
-3. Inicie a estrutura do seu projeto (seja em React ou Vanilla JS)
+- Node js
+- NPM ou Yarn
 
-## Entrega
-Entregue este projeto realizando um Pull Request para este repositório dentro do prazo combinado com o avaliador.
-Em caso de dúvidas, contate-nos via e-mail.
+### 💻Como usar:
+
+Aplicação construída em React js, então para rodar a aplicação em sua maquina deve ser seguido os seguintes passos: 
+
+ 
+
+1. Após clonar o repositório em sua maquina, no terminal dentro da pasta do projeto rode um `Yarn ou npm i` que será responsável por baixar todas as dependências necessárias. 
+2. Logo em seguida rode o comando yarn start ou npm start, após isso o projeto ira abrir no seu [localhost](http://localhost) na porta 3006, porta escolhida durante o desenvolvimento. 
+
+### 🛠Tecnologias usadas na construção do projeto:
+
+Para a criação do projeto foram utilizadas as seguintes libs :
+
+- Styled-Components : criação de CSS in JS;
+- Axios : responsável pelas requisições feitas na Api;
+- Typescript: Foi um projeto usando typescript, para auxiliar na diminuição de possíveis problemas no ambiente de desenvolvimento.
+
+### Conclusão: Para finalizar uma imagem do projeto
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35e6fd36-2ee4-4458-ba79-ef9eb12475ca/Untitled.png)
+
+### 👩🏽Desenvolvido por : Amanda Duarte

@@ -72,7 +72,7 @@ export const Container = styled.div`
 
     padding:0.80% 2%;
     background:var(--card-color);
-    margin:0 75px 5px 75px;
+    margin: 0 75px 5px 75px;
 
     font-size:1.2vw;
     color:#000;

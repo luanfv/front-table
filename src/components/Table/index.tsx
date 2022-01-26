@@ -40,12 +40,12 @@ export const Table = () => {
    {peoples.map(itens =>{
         return(
       <div className="Table-item" key={itens.id}>
-        <img className="--item-icon" src={itens.image}/>
-         <p className="--item-name">{itens.name}</p>
-         <p className="--item-job">{itens.job}</p>
-         <p className="--item-date">{new Intl.DateTimeFormat('pt-BR')
-         .format(new Date (itens.admission_date))}</p>
-         <p className="--item-phone">{PhoneFormat(itens.phone)}</p>
+          <img className="--item-icon" src={itens.image}/>
+          <p className="--item-name">{itens.name}</p>
+          <p className="--item-job">{itens.job}</p>
+          <p className="--item-date">{new Intl.DateTimeFormat('pt-BR')
+          .format(new Date (itens.admission_date))}</p>
+          <p className="--item-phone">{PhoneFormat(itens.phone)}</p>
      </div>
       )})}
     </Container>

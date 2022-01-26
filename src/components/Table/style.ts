@@ -5,6 +5,7 @@ export const Container = styled.div`
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  background:var(--background);
 
 
   .Search{
@@ -63,16 +64,15 @@ export const Container = styled.div`
     }
   }
 }
-
   .Table-item{
     display: grid;
-    grid-template-rows: 39px;
-    grid-row-gap: 2px;
+    grid-template-rows: repeat (auto-fill, 39px);
+    grid-row-gap: 1.4vw;
     grid-template-columns: 0.5fr repeat(4, 2fr);
 
     padding:0.80% 2%;
     background:var(--card-color);
-    margin:0 75px;
+    margin:0 75px 5px 75px;
 
     font-size:1.2vw;
     color:#000;

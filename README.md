@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6596963-b302-4dc4-8e7c-9d95d6c04c65/Untitled.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👷‍♂️Aplicação de listagem de funcionários
 
-## Available Scripts
+### Sobre: Projeto que apresenta uma lista com todos os funcionários, com informações adicionais sobre cargo, nome, e data de admissão permitindo o usuário realizar uma pesquisa com base em qualquer uma das informações citadas.
 
-In the project directory, you can run:
+[https://img.shields.io/static/v1?label=](https://img.shields.io/static/v1?label=)<LABEL>&message=<MESSAGE>&color=<COLOR>&style=<STYLE>&logo=<LOGO>
 
-### `npm start`
+### 🛴Requisitos antes de rodar o projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Antes de rodar o projeto na sua maquina são necessárias algumas ferramentas:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node js
+- NPM ou Yarn
 
-### `npm test`
+### 💻Como usar:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplicação construída em React js, então para rodar a aplicação em sua maquina deve ser seguido os seguintes passos: 
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Após clonar o repositório em sua maquina, no terminal dentro da pasta do projeto rode um `Yarn ou npm i` que será responsável por baixar todas as dependências necessárias. 
+2. Logo em seguida rode o comando yarn start ou npm start, após isso o projeto ira abrir no seu [localhost](http://localhost) na porta 3006, porta escolhida durante o desenvolvimento. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🛠Tecnologias usadas na construção do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para a criação do projeto foram utilizadas as seguintes libs :
 
-### `npm run eject`
+- Styled-Components : criação de CSS in JS;
+- Axios : responsável pelas requisições feitas na Api;
+- Typescript: Foi um projeto usando typescript, para auxiliar na diminuição de possíveis problemas no ambiente de desenvolvimento.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Conclusão: Para finalizar uma imagem do projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/35e6fd36-2ee4-4458-ba79-ef9eb12475ca/Untitled.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 👩🏽Desenvolvido por : Amanda Duarte

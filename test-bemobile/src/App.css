@@ -12,11 +12,16 @@
 }
 
 .employess-search {
-  background: white;
+  background: url("./assets/images/search-icon.png") no-repeat right;
+  background-size: 20px;
+  background-color: white;
   margin-right: 32px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
-  padding: 8px 0 8px 12px;
+  padding-left: 12px;
+  width: 282px;
+  height: 40px;
+  background-position: 249px;
 }
 
 .flex {

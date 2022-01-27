@@ -1,0 +1,38 @@
+.table {
+  margin-left: 32px;
+  margin-right: 32px;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18.75px;
+  background-color: white;
+}
+
+.table-header {
+  font-weight: 500;
+  color: white;
+  background-color: #5984c0;
+}
+th,
+td {
+  width: 960px;
+  height: 49px;
+}
+
+tr {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.employee-image {
+  width: 34px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+th:nth-child(1) {
+  border-radius: 4px 0 0 0;
+}
+
+th:nth-child(5) {
+  border-radius: 0 4px 0 0;
+}

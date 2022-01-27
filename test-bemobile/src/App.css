@@ -1,0 +1,31 @@
+.employess {
+  background: #f0f0f0;
+  height: 100vh;
+}
+
+.employess-title {
+  margin: 40px 0 35px 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.13px;
+  color: #1c1c1c;
+}
+
+.employess-search {
+  background: url("./assets/images/search-icon.png") no-repeat right;
+  background-size: 20px;
+  background-color: white;
+  margin-right: 32px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding-left: 12px;
+  width: 282px;
+  height: 40px;
+  background-position: 249px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

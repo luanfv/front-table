@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Tabela de funcionário 
+A aplicação consite em uma tabela que recebe uma requisação com os dados dos funcionário da empresa, nos quais consiste: foto, nome, cargo, data de admissão e telefone. É possivel encontrar o funcionário por qualquer uma das propriedades no campo de pesquisa (excluindo a foto).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alt text](https://i.imgur.com/bMM8OGW.png)
 
-## Available Scripts
+## Pré-requisitos
+Tenha instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/).
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Rodando a aplicação
+Para iniciar o projeto, siga o passo a passo abaixo. Caso não tenha familiaridade com o [json-server](https://github.com/typicode/json-server):
+1. Baixe o [projeto](https://github.com/LukaVieira1/front-table) em sua máquina e crie um repositório no Github baseado nele
+2. Dentro da pasta "front-table" execute os seguintes passos
+```bash
+# Instalar as dependências
+$ yarn
+# Executar o json-server
+$ yarn json-server --watch server.json
+```
+3. Entre na pasta "test-bemobile" e instale as dependências do projeto.
+```bash
+# Instalar as dependências
+$ yarn
+```
+4. Crie na raiz da pasta "test-mobile" um .env-local e adicione uma variável de ambiente "REACT_APP_API_URL" que irá conter o link para a api. Nesse projeto utiliza-se "REACT_APP_API_URL=http://localhost:3000"
+5. Execute o projeto em uma porta diferente da 3000, pois ela já vai estar em uso (caso você esteja executando o vscode, na hora de executar, ele vai perguntar se você quer rodar o projeto em outra porta)
+```bash
+# Executando o projeto
+$ yarn start
+```
